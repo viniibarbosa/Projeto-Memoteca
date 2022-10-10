@@ -1,0 +1,77 @@
+.modelo1{
+  background-color: white;
+  box-shadow: 1rem 1rem #154580;
+}
+.modelo2{
+  background-color: white;
+  box-shadow: 1rem 1rem #6BD1FF;
+}
+.modelo3{
+  background-color: white;
+  width: 100%;
+  box-shadow: 1rem 1rem #84EEC1;
+}
+.pensamento-p{
+  width: 17rem;
+  margin: 1rem;
+}
+.pensamento-g{
+  width: 30rem;
+  margin: 1rem;
+
+}
+.card-frases{
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.container-cards{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.modelo-numero{
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+}
+.container-cards{
+  margin-top: 5%;
+}
+.frase{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+.autoria{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.titulo{
+  font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+align-items: center;
+text-align: center;
+  color: #154580;
+}
+.botao{
+  border: none;
+}
+.botoes{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width:900px) {
+  .pensamento-g{
+    width: 25rem;
+  }
+}

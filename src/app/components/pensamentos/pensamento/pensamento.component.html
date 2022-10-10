@@ -1,0 +1,23 @@
+<section>
+  <div [ngClass]="larguraConteudo()">
+    <div class="{{pensamento.modelo}}">
+        <img src="../../../../assets/{{pensamento.modelo}}.png" alt="Modelo 3" />
+      <div class="card-frases">
+        <p class="frase">
+          {{pensamento.conteudo}}
+        </p>
+        <p class="autoria">{{pensamento.autoria}}</p>
+      </div>
+      <div class="botoes">
+        <button class="botao">
+          <img src="../../../../assets/icone-editar.png" alt="">
+        </button>
+        <button class="botao">
+          <img src="../../../../assets/icone-excluir.png" alt="">
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</section>

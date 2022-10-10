@@ -1,0 +1,85 @@
+<section class="sessao">
+  <h1 class="titulo">Adicione seu Pensamento</h1>
+  <section class="container">
+    <form class="formulario">
+      <label class="texto" for="Pensamento">Pensamento:</label>
+      <input
+        class="input-pensamento"
+        type="textarea"
+        placeholder="Digite seu Pensamento"
+        [(ngModel)]="pensamento.conteudo"
+        name="conteudo"
+      />
+      <label class="texto" for="Autoria">Autoria:</label>
+      <input class="input" type="text" placeholder="Digite sua Autoria" name="autoria" [(ngModel)]="pensamento.autoria"/>
+
+      <label for="modelo">Selecione o modelo de card:</label>
+
+      <div class="container-cards">
+        <div class="modelo-card">
+          <div>
+            <input
+              type="radio"
+              id="modelo1"
+              name="modelo"
+              value="modelo1"
+              checked
+              [(ngModel)]="pensamento.modelo"
+            />
+            <label for="modelo" class="modelo-numero">Modelo 1 </label>
+          </div>
+          <p>Prévia</p>
+          <div class="card-1">
+            <img src="../../../../assets/modelo1.png" alt="Modelo 1" />
+            <div class="card-frases">
+              <p class="frase"
+              >
+                {{ pensamento.conteudo }}
+              </p>
+              <p class="autoria">{{pensamento.autoria}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modelo-card">
+          <div>
+            <input type="radio" id="modelo2" name="modelo" [(ngModel)]="pensamento.modelo" value="modelo2"/>
+            <label for="modelo"class="modelo-numero" >Modelo 2</label>
+          </div>
+          <p>Prévia</p>
+          <div class="card-2">
+            <img src="../../../../assets/modelo2.png" alt="Modelo 2" />
+            <div class="card-frases">
+              <p class="frase">
+                {{pensamento.conteudo}}
+              </p>
+              <p class="autoria">{{pensamento.autoria}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modelo-card">
+          <div>
+            <input type="radio" id="modelo3" name="modelo" value="modelo3" [(ngModel)]="pensamento.modelo" />
+            <label for="modelo3" class="modelo-numero">Modelo 3</label>
+          </div>
+          <p>Prévia</p>
+          <div class="card-3">
+            <img src="../../../../assets/modelo3.png" alt="Modelo 3" />
+            <div class="card-frases">
+              <p class="frase">
+                {{pensamento.conteudo}}
+              </p>
+              <p class="autoria">{{pensamento.autoria}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="botoes">
+            <button class="botao" (click)="criarPensamento()">Salvar</button>
+            <button class="botao" routerLink="/listarPensamento">Cancelar</button>
+          </div>
+
+    </form>
+  </section>
+</section>

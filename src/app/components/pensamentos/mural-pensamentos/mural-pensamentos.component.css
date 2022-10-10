@@ -1,0 +1,34 @@
+.titulo{
+  font-size: 2rem;
+  color: #154580;
+
+}
+.botao-novo-pensamento{
+  background-color: #154580;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 2rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quadro{
+  width: 50rem;
+  flex-wrap:wrap;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 7rem;
+}
+@media (max-width: 900px) {
+  .quadro{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+}
