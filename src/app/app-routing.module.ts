@@ -1,3 +1,5 @@
+import { EditarPensamentosComponent } from './components/pensamentos/editar-pensamentos/editar-pensamentos.component';
+import { ExcluirPensamentoComponent } from './components/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { MuralPensamentosComponent } from './components/pensamentos/mural-pensamentos/mural-pensamentos.component';
 import { AdicionarPensamentoComponent } from './components/pensamentos/adicionar-pensamento/adicionar-pensamento.component';
 import { NgModule, Component } from '@angular/core';
@@ -16,7 +18,15 @@ const routes: Routes = [
   {
     path: 'listarPensamento',
     component: MuralPensamentosComponent
-  }
+  },
+  {
+    path: 'pensamentos/excluirPensamento/:id',
+    component: ExcluirPensamentoComponent
+  },
+  {
+    path: 'pensamentos/editarPensamento/:id',
+    component: EditarPensamentosComponent
+  },
 ];
 
 @NgModule({

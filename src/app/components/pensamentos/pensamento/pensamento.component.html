@@ -9,10 +9,10 @@
         <p class="autoria">{{pensamento.autoria}}</p>
       </div>
       <div class="botoes">
-        <button class="botao">
+        <button class="botao" routerLink="/pensamentos/editarPensamento/{{pensamento.id}}">
           <img src="../../../../assets/icone-editar.png" alt="">
         </button>
-        <button class="botao">
+        <button class="botao" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
           <img src="../../../../assets/icone-excluir.png" alt="">
         </button>
       </div>
